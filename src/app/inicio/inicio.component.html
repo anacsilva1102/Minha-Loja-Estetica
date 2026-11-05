@@ -1,8 +1,12 @@
 <header class="cabecalho">
   <a class="logo" routerLink="/inicio" aria-label="Minha Loja, início">
     <span class="logo-marca">M</span>
-    <span><strong>Minha Loja</strong><small>Estética &amp; Bem-Estar</small></span>
+    <span>
+      <strong>Minha Loja</strong>
+      <small>Estética &amp; Bem-Estar</small>
+    </span>
   </a>
+
   <nav aria-label="Navegação principal">
     <a routerLink="/inicio">Início</a>
     <a routerLink="/produtos">Produtos</a>
@@ -10,7 +14,7 @@
     <a routerLink="/cadastro">Cadastro</a>
     <a routerLink="/carrinho">Carrinho</a>
     <a routerLink="/painel-administrativo">Administração</a>
-  <a routerLink="/meus-pedidos">Meus pedidos</a>
+    <a routerLink="/meus-pedidos">Meus pedidos</a>
   </nav>
 </header>
 
@@ -18,24 +22,39 @@
   <section class="destaque">
     <div class="destaque-texto">
       <p class="introducao">Estética &amp; Bem-Estar</p>
-      <h1>Seu momento de cuidado começa aqui.</h1>
-      <p>Produtos e serviços para trazer mais beleza e bem-estar à sua rotina.</p>
+
+      <h1>Cuide da sua beleza e do seu bem-estar.</h1>
+
+      <p>
+        Aqui você encontra produtos e serviços para seus cuidados diários.
+        Conheça nossas opções e escolha o que combina com você.
+      </p>
+
       <div class="acoes">
-        <a routerLink="/produtos" class="botao">Explorar produtos</a>
+        <a routerLink="/produtos" class="botao">Ver produtos</a>
         <a routerLink="/item-servico" class="link-servicos">Conhecer serviços</a>
       </div>
     </div>
-    <div class="composicao" aria-hidden="true">
-      <div class="forma forma-externa"></div>
-      <div class="forma forma-interna"></div>
-      <div class="frasco"><span>Minha Loja</span><small>bem-estar</small></div>
-      <span class="composicao-legenda">Um cuidado por vez.</span>
-    </div>
   </section>
-  <section class="caminhos" aria-label="Explore a loja">
-    <a routerLink="/produtos"><span>Para sua rotina</span><strong>Produtos</strong><span>Conheça a seleção ›</span></a>
-    <a routerLink="/item-servico"><span>Para seu tempo</span><strong>Serviços</strong><span>Veja as opções ›</span></a>
-    <a routerLink="/cadastro"><span>Para começar</span><strong>Seu cadastro</strong><span>Cadastre-se ›</span></a>
+
+  <section class="caminhos" aria-label="Conheça nossa loja">
+    <a routerLink="/produtos">
+      <strong>Produtos</strong>
+      <span>Confira nossas opções de beleza e cuidados.</span>
+    </a>
+
+    <a routerLink="/item-servico">
+      <strong>Serviços</strong>
+      <span>Conheça os serviços disponíveis na loja.</span>
+    </a>
+
+    <a routerLink="/cadastro">
+      <strong>Cadastro</strong>
+      <span>Faça seu cadastro e tenha acesso à loja.</span>
+    </a>
   </section>
 </main>
-<footer><p>Minha Loja <span>Estética &amp; Bem-Estar</span></p></footer>
+
+<footer>
+  <p>Minha Loja <span>Estética &amp; Bem-Estar</span></p>
+</footer>

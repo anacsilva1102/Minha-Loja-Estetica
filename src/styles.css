@@ -3,96 +3,467 @@
 :root {
   color-scheme: light;
   font-family: 'DM Sans', sans-serif;
-  color: #322739;
-  background: #faf8fd;
-}
-* { box-sizing: border-box; }
-body { margin: 0; }
-button, input, select, textarea { font: inherit; }
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-  outline: 3px solid #8552aa;
-  outline-offset: 3px;
-}
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  color: #91465F;
+  background: #FCE8EF;
+
+  --rosa: #C06F8F;
+  --rosa-escuro: #91465F;
+  --rosa-claro: #FCE8EF;
+  --rosa-medio: #F0BFD0;
+  --rosa-borda: #E6A9BF;
+  --texto: #91465F;
+  --texto-suave: #A66B81;
+  --fundo: #FCE8EF;
 }
 
-/* Identidade visual compartilhada entre a loja e a administração. */
-:root {
-  --roxo: #59337c;
-  --roxo-escuro: #43245f;
-  --lilas: #eee7f7;
-  --lilas-medio: #d1bfe1;
-  --texto: #322739;
-  --texto-suave: #665370;
-  --fundo: #faf8fd;
+* {
+  box-sizing: border-box;
 }
-app-produtos, app-item-servico, app-cadastro, app-carrinho,
-app-painel-administrativo, app-clientes, app-categorias, app-estoque,
-app-entrada-produtos, app-gerenciamento-produtos, app-gerenciamento-servicos,
-app-pedidos { font-family: 'DM Sans', sans-serif !important; }
-app-produtos .cabecalho, app-item-servico .cabecalho,
-app-cadastro .cabecalho, app-carrinho .cabecalho {
-  display: flex !important; align-items: center !important; justify-content: space-between !important;
-  flex-direction: row !important; gap: 24px !important; min-height: 92px;
-  padding: 18px 7% !important; background: white !important; border: 0 !important;
+
+html {
+  scroll-behavior: smooth;
+  background: #FCE8EF;
 }
-app-produtos .logo, app-item-servico .logo, app-cadastro .logo, app-carrinho .logo {
-  display: flex; align-items: center; gap: 12px; color: var(--roxo); text-decoration: none; flex-shrink: 0;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #FCE8EF;
+  color: #91465F;
 }
-.logo-marca { display: grid; place-items: center; width: 45px; height: 45px; border: 1px solid #ad8bc5; border-radius: 50%; font: 26px 'DM Serif Display', Georgia, serif; }
-.logo strong, .logo small { display: block; }
-.logo strong { font: 23px 'DM Serif Display', Georgia, serif; }
-.logo small { margin-top: 2px; color: var(--texto-suave); font-size: 11px; }
-app-produtos nav, app-item-servico nav, app-cadastro nav, app-carrinho nav { display: flex; flex-wrap: wrap; gap: 20px !important; }
-app-produtos nav a, app-item-servico nav a, app-cadastro nav a, app-carrinho nav a {
-  color: #493455 !important; font: 600 13px 'DM Sans', sans-serif !important; text-decoration: none;
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
-app-produtos nav a:hover, app-item-servico nav a:hover, app-cadastro nav a:hover, app-carrinho nav a:hover { color: #8052a6 !important; }
-app-produtos .catalogo, app-item-servico .catalogo, app-carrinho .catalogo, app-cadastro .catalogo {
-  padding: 58px 7% 72px !important; background: var(--fundo) !important;
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #C06F8F;
+  outline-offset: 3px;
 }
-app-produtos .catalogo h2, app-item-servico .catalogo h2, app-carrinho .catalogo h2, app-cadastro .catalogo h2 {
-  margin: 0 0 12px !important; color: var(--roxo-escuro) !important;
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* IDENTIDADE VISUAL */
+
+app-produtos,
+app-item-servico,
+app-cadastro,
+app-carrinho,
+app-painel-administrativo,
+app-clientes,
+app-categorias,
+app-estoque,
+app-entrada-produtos,
+app-gerenciamento-produtos,
+app-gerenciamento-servicos,
+app-pedidos {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+/* CABEÇALHO */
+
+app-produtos .cabecalho,
+app-item-servico .cabecalho,
+app-cadastro .cabecalho,
+app-carrinho .cabecalho {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  gap: 24px !important;
+  min-height: 92px;
+  padding: 18px 7% !important;
+  background: #C06F8F !important;
+  border-bottom: 3px solid #F0BFD0 !important;
+}
+
+/* LOGO */
+
+app-produtos .logo,
+app-item-servico .logo,
+app-cadastro .logo,
+app-carrinho .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--rosa-escuro);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-marca {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #F0BFD0 !important;
+  border-radius: 50%;
+  background: #FCE8EF !important;
+  color: #91465F !important;
+  font: 26px 'DM Serif Display', Georgia, serif;
+}
+
+.logo strong,
+.logo small {
+  display: block;
+}
+
+.logo strong {
+  color: #91465F;
+  font: 23px 'DM Serif Display', Georgia, serif;
+}
+
+.logo small {
+  margin-top: 2px;
+  color: #FFF0F5;
+  font-size: 11px;
+}
+
+/* MENU */
+
+app-produtos nav,
+app-item-servico nav,
+app-cadastro nav,
+app-carrinho nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px !important;
+}
+
+app-produtos nav a,
+app-item-servico nav a,
+app-cadastro nav a,
+app-carrinho nav a {
+  color: #FFFFFF !important;
+  font: 600 13px 'DM Sans', sans-serif !important;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+app-produtos nav a:hover,
+app-item-servico nav a:hover,
+app-cadastro nav a:hover,
+app-carrinho nav a:hover {
+  color: #FCE8EF !important;
+}
+
+/* CATÁLOGO */
+
+app-produtos .catalogo,
+app-item-servico .catalogo,
+app-carrinho .catalogo,
+app-cadastro .catalogo {
+  padding: 58px 7% 72px !important;
+  background: #FCE8EF !important;
+  color: #91465F !important;
+}
+
+app-produtos .catalogo h2,
+app-item-servico .catalogo h2,
+app-carrinho .catalogo h2,
+app-cadastro .catalogo h2 {
+  margin: 0 0 12px !important;
+  color: #91465F !important;
   font: 400 clamp(34px, 4vw, 48px)/1.15 'DM Serif Display', Georgia, serif !important;
 }
-app-produtos .catalogo > p, app-item-servico .catalogo > p, app-carrinho .catalogo > p, app-cadastro .catalogo > p { color: var(--texto-suave) !important; line-height: 1.7; }
-app-produtos .produtos, app-item-servico .produtos { max-width: 1200px; margin: 38px auto 0 !important; gap: 18px !important; }
-app-produtos .produto, app-item-servico .produto {
-  padding: 26px !important; min-height: 240px; background: white !important;
-  border: 1px solid #e0d2eb !important; border-top: 4px solid #cbb2df !important; border-radius: 5px !important; box-shadow: none !important;
+
+app-produtos .catalogo > p,
+app-item-servico .catalogo > p,
+app-carrinho .catalogo > p,
+app-cadastro .catalogo > p {
+  color: #A66B81 !important;
+  line-height: 1.7;
 }
-app-produtos .produto:hover, app-item-servico .produto:hover { transform: none !important; border-top-color: var(--roxo) !important; }
-app-produtos .produto h3, app-item-servico .produto h3 { margin-top: 0; color: var(--roxo-escuro) !important; font: 24px/1.2 'DM Serif Display', Georgia, serif !important; }
-app-produtos .produto p, app-item-servico .produto p { color: var(--texto-suave) !important; font-size: 14px !important; }
-app-produtos .produto .preco, app-item-servico .produto .preco { color: var(--roxo) !important; font-size: 18px !important; }
-app-produtos .botao-comprar, app-item-servico .botao-agendar, app-carrinho .botao-finalizar, app-cadastro .acoes-cliente .botao {
-  background: var(--roxo) !important; color: white !important; border: 0; border-radius: 4px !important; font-weight: 700;
+
+/* PRODUTOS E SERVIÇOS */
+
+app-produtos .produtos,
+app-item-servico .produtos {
+  max-width: 1200px;
+  margin: 38px auto 0 !important;
+  gap: 18px !important;
 }
-app-produtos .botao-comprar:hover, app-item-servico .botao-agendar:hover, app-carrinho .botao-finalizar:hover, app-cadastro .acoes-cliente .botao:hover { background: var(--roxo-escuro) !important; }
-app-produtos footer, app-item-servico footer, app-carrinho footer, app-cadastro footer { background: var(--roxo) !important; color: white !important; }
-app-cadastro .formulario-cliente { max-width: 760px !important; padding: 32px !important; background: white !important; box-shadow: none !important; border: 1px solid #e0d2eb !important; }
-app-cadastro .formulario-cliente { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
-app-cadastro .campo-cliente:first-child, app-cadastro .acoes-cliente, app-cadastro .formulario-cliente > p { grid-column: 1 / -1; }
-app-carrinho .resumo, app-carrinho .item-carrinho, app-carrinho .carrinho-vazio { border-color: #e0d2eb !important; box-shadow: none !important; }
-app-painel-administrativo .conteudo h2, app-clientes h1, app-categorias h1,
-app-gerenciamento-servicos h1, app-estoque h2, app-entrada-produtos h2,
-app-gerenciamento-produtos h2, app-pedidos h2 { color: var(--roxo-escuro) !important; font-family: 'DM Serif Display', Georgia, serif !important; font-weight: 400 !important; }
-app-painel-administrativo .conteudo { max-width: 1050px !important; margin: 55px auto !important; }
-app-painel-administrativo .conteudo h2 { font-size: clamp(34px, 4vw, 48px) !important; }
-app-painel-administrativo .cartao { border-radius: 5px !important; border-color: #e0d2eb !important; box-shadow: none !important; }
-app-painel-administrativo .cartao:hover { transform: none !important; border-color: #7950a3 !important; }
-app-painel-administrativo .cabecalho h1 { letter-spacing: normal !important; }
-app-clientes .tabela-container, app-categorias .tabela-container, app-estoque .tabela-container,
-app-entrada-produtos .tabela-container, app-gerenciamento-produtos .tabela-container,
-app-gerenciamento-servicos .tabela-container, app-pedidos .tabela-container { max-width: 100%; overflow-x: auto; }
+
+app-produtos .produto,
+app-item-servico .produto {
+  padding: 26px !important;
+  min-height: 240px;
+  background: #FFF9FB !important;
+  border: 1px solid #F0BFD0 !important;
+  border-top: 4px solid #E6A9BF !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+}
+
+app-produtos .produto:hover,
+app-item-servico .produto:hover {
+  transform: none !important;
+  border-top-color: var(--rosa) !important;
+}
+
+app-produtos .produto h3,
+app-item-servico .produto h3 {
+  margin-top: 0;
+  color: var(--rosa-escuro) !important;
+  font: 24px/1.2 'DM Serif Display', Georgia, serif !important;
+}
+
+app-produtos .produto p,
+app-item-servico .produto p {
+  color: var(--texto-suave) !important;
+  font-size: 14px !important;
+}
+
+app-produtos .produto .preco,
+app-item-servico .produto .preco {
+  color: var(--rosa) !important;
+  font-size: 18px !important;
+}
+
+/* BOTÕES */
+
+app-produtos .botao-comprar,
+app-item-servico .botao-agendar,
+app-carrinho .botao-finalizar,
+app-cadastro .acoes-cliente .botao {
+  background: var(--rosa) !important;
+  color: white !important;
+  border: 0;
+  border-radius: 4px !important;
+  font-weight: 700;
+}
+
+app-produtos .botao-comprar:hover,
+app-item-servico .botao-agendar:hover,
+app-carrinho .botao-finalizar:hover,
+app-cadastro .acoes-cliente .botao:hover {
+  background: #D77F9B !important;
+}
+
+/* RODAPÉ */
+
+app-produtos footer,
+app-item-servico footer,
+app-carrinho footer,
+app-cadastro footer {
+  background: var(--rosa) !important;
+  color: white !important;
+}
+
+/* CADASTRO */
+
+app-cadastro .formulario-cliente {
+  max-width: 760px !important;
+  padding: 32px !important;
+  background: #FFF9FB !important;
+  box-shadow: none !important;
+  border: 1px solid #F0BFD0 !important;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 18px;
+}
+
+app-cadastro .campo-cliente:first-child,
+app-cadastro .acoes-cliente,
+app-cadastro .formulario-cliente > p {
+  grid-column: 1 / -1;
+}
+
+/* CARRINHO */
+
+app-carrinho {
+  background: #FCE8EF !important;
+  color: #91465F !important;
+}
+
+app-carrinho .catalogo {
+  background: #FCE8EF !important;
+}
+
+app-carrinho .item-carrinho,
+app-carrinho .resumo,
+app-carrinho .carrinho-vazio {
+  background: #FFF9FB !important;
+  border: 1px solid #F0BFD0 !important;
+  box-shadow: none !important;
+}
+
+app-carrinho .catalogo h2,
+app-carrinho .item-carrinho h3,
+app-carrinho .resumo h3,
+app-carrinho .carrinho-vazio h3 {
+  color: #91465F !important;
+}
+
+app-carrinho .catalogo > p,
+app-carrinho .informacoes-item p,
+app-carrinho .carrinho-vazio p {
+  color: #A66B81 !important;
+}
+
+app-carrinho .preco-item strong,
+app-carrinho .subtotal-item strong,
+app-carrinho .linha-resumo strong {
+  color: #C06F8F !important;
+}
+
+app-carrinho .tipo-item {
+  background: #FCE8EF !important;
+  color: #C06F8F !important;
+}
+
+app-carrinho .botao-finalizar {
+  background: #C06F8F !important;
+  color: #FFFFFF !important;
+}
+
+app-carrinho .botao-finalizar:hover {
+  background: #D77F9B !important;
+}
+
+app-carrinho .botao-continuar,
+app-carrinho .botao-remover {
+  background: #FFF9FB !important;
+  border: 1px solid #D77F9B !important;
+  color: #C06F8F !important;
+}
+
+app-carrinho .botao-continuar:hover,
+app-carrinho .botao-remover:hover {
+  background: #F0BFD0 !important;
+  color: #91465F !important;
+}
+
+app-carrinho input {
+  border-color: #E6A9BF !important;
+  color: #91465F !important;
+}
+
+app-carrinho .pagamento {
+  border-color: #F0BFD0 !important;
+  background: #FFF9FB !important;
+}
+
+app-carrinho .pagamento label,
+app-carrinho .pagamento legend {
+  color: #91465F !important;
+}
+
+app-carrinho .pagamento input {
+  accent-color: #C06F8F !important;
+}
+
+/* ADMINISTRAÇÃO */
+
+app-painel-administrativo .conteudo h2,
+app-clientes h1,
+app-categorias h1,
+app-gerenciamento-servicos h1,
+app-estoque h2,
+app-entrada-produtos h2,
+app-gerenciamento-produtos h2,
+app-pedidos h2 {
+  color: var(--rosa-escuro) !important;
+  font-family: 'DM Serif Display', Georgia, serif !important;
+  font-weight: 400 !important;
+}
+
+app-painel-administrativo .conteudo {
+  max-width: 1050px !important;
+  margin: 55px auto !important;
+}
+
+app-painel-administrativo .conteudo h2 {
+  font-size: clamp(34px, 4vw, 48px) !important;
+}
+
+app-painel-administrativo .cartao {
+  border-radius: 5px !important;
+  border-color: #F0BFD0 !important;
+  box-shadow: none !important;
+}
+
+app-painel-administrativo .cartao:hover {
+  transform: none !important;
+  border-color: #C06F8F !important;
+}
+
+app-painel-administrativo .cabecalho h1 {
+  letter-spacing: normal !important;
+}
+
+/* TABELAS */
+
+app-clientes .tabela-container,
+app-categorias .tabela-container,
+app-estoque .tabela-container,
+app-entrada-produtos .tabela-container,
+app-gerenciamento-produtos .tabela-container,
+app-gerenciamento-servicos .tabela-container,
+app-pedidos .tabela-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* RESPONSIVIDADE */
+
 @media (max-width: 850px) {
-  app-produtos .cabecalho, app-item-servico .cabecalho, app-cadastro .cabecalho, app-carrinho .cabecalho { align-items: flex-start !important; flex-direction: column !important; }
+  app-produtos .cabecalho,
+  app-item-servico .cabecalho,
+  app-cadastro .cabecalho,
+  app-carrinho .cabecalho {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+  }
 }
+
 @media (max-width: 600px) {
-  app-produtos .cabecalho, app-item-servico .cabecalho, app-cadastro .cabecalho, app-carrinho .cabecalho { padding: 18px 6% !important; }
-  app-produtos nav, app-item-servico nav, app-cadastro nav, app-carrinho nav { justify-content: flex-start !important; gap: 14px !important; }
-  app-produtos .catalogo, app-item-servico .catalogo, app-carrinho .catalogo, app-cadastro .catalogo { padding: 38px 6% 55px !important; }
-  app-cadastro .formulario-cliente { grid-template-columns: 1fr; padding: 22px !important; }
-  app-cadastro .campo-cliente:first-child, app-cadastro .acoes-cliente, app-cadastro .formulario-cliente > p { grid-column: auto; }
+  app-produtos .cabecalho,
+  app-item-servico .cabecalho,
+  app-cadastro .cabecalho,
+  app-carrinho .cabecalho {
+    padding: 18px 6% !important;
+  }
+
+  app-produtos nav,
+  app-item-servico nav,
+  app-cadastro nav,
+  app-carrinho nav {
+    justify-content: flex-start !important;
+    gap: 14px !important;
+  }
+
+  app-produtos .catalogo,
+  app-item-servico .catalogo,
+  app-carrinho .catalogo,
+  app-cadastro .catalogo {
+    padding: 38px 6% 55px !important;
+  }
+
+  app-cadastro .formulario-cliente {
+    grid-template-columns: 1fr;
+    padding: 22px !important;
+  }
+
+  app-cadastro .campo-cliente:first-child,
+  app-cadastro .acoes-cliente,
+  app-cadastro .formulario-cliente > p {
+    grid-column: auto;
+  }
 }

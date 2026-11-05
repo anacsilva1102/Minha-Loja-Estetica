@@ -1,7 +1,7 @@
 .pagina-pedidos {
   padding: 30px;
-  color: #4d3540;
-  background: #faf8fd;
+  color: #4b2635;
+  background: #fff7fa;
   min-height: 100%;
 }
 
@@ -15,13 +15,13 @@
 
 .cabecalho h2 {
   margin: 0 0 8px;
-  color: #7950a3;
+  color: #b56b88;
   font-size: 28px;
 }
 
 .cabecalho p {
   margin: 0;
-  color: #806773;
+  color: #997483;
 }
 
 .botoes-cabecalho {
@@ -34,7 +34,7 @@ button {
   border: none;
   border-radius: 8px;
   padding: 11px 18px;
-  background: #7950a3;
+  background: #b56b88;
   color: white;
   cursor: pointer;
   font-size: 14px;
@@ -42,17 +42,17 @@ button {
 }
 
 button:hover {
-  background: #99536e;
+  background: #9e5875;
 }
 
 .botao-voltar {
   background: white;
-  color: #7950a3;
-  border: 1px solid #7950a3;
+  color: #b56b88;
+  border: 1px solid #b56b88;
 }
 
 .botao-voltar:hover {
-  background: #ede3f7;
+  background: #fff0f5;
 }
 
 .tabela-container {
@@ -74,30 +74,30 @@ table {
 
 thead th {
   padding: 17px 16px;
-  background: #ede3f7;
-  color: #75465a;
+  background: #fff0f5;
+  color: #4b2635;
   font-size: 14px;
   font-weight: 700;
   text-align: left;
   white-space: nowrap;
-  border-bottom: 2px solid #e0cdec;
+  border-bottom: 2px solid #f0bfd0;
 }
 
 tbody td {
   padding: 18px 16px;
-  color: #59434d;
+  color: #4b2635;
   font-size: 14px;
-  border-bottom: 1px solid #e9ddf4;
+  border-bottom: 1px solid #f0bfd0;
   white-space: nowrap;
   vertical-align: middle;
 }
 
 tbody tr:nth-child(even) {
-  background: #fcfaff;
+  background: #fffafd;
 }
 
 tbody tr:hover {
-  background: #f7f0fc;
+  background: #fff0f5;
   transition: background 0.2s ease;
 }
 
@@ -108,17 +108,17 @@ tbody tr:last-child td {
 select {
   min-width: 145px;
   padding: 10px 12px;
-  border: 1px solid #dfb4c5;
+  border: 1px solid #f0bfd0;
   border-radius: 7px;
   background: white;
-  color: #60404e;
+  color: #4b2635;
   font-size: 13px;
   cursor: pointer;
   outline: none;
 }
 
 select:focus {
-  border-color: #7950a3;
+  border-color: #b56b88;
   box-shadow: 0 0 0 3px rgba(181, 107, 136, 0.12);
 }
 
@@ -127,29 +127,29 @@ details {
 }
 
 summary {
-  color: #a45d7b;
+  color: #b56b88;
   font-weight: 600;
   cursor: pointer;
   list-style-position: inside;
 }
 
 summary:hover {
-  color: #7f405d;
+  color: #9e5875;
 }
 
 .detalhes-itens {
   min-width: 180px;
   margin-top: 12px;
   padding: 12px;
-  background: #fff5f8;
-  border: 1px solid #efd2dd;
+  background: #fff0f5;
+  border: 1px solid #f0bfd0;
   border-radius: 8px;
   white-space: normal;
 }
 
 .detalhes-itens p {
   margin: 5px 0;
-  color: #60404e;
+  color: #4b2635;
   font-size: 13px;
 }
 
@@ -173,7 +173,7 @@ summary:hover {
 .vazio {
   padding: 30px;
   text-align: center;
-  color: #806773;
+  color: #997483;
 }
 
 @media (max-width: 700px) {

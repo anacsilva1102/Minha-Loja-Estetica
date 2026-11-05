@@ -1,7 +1,50 @@
-.pagina { max-width: 900px; margin: auto; padding: 40px 6%; min-height: 80vh; }
-h1, h2 { font-family: 'DM Serif Display', Georgia, serif; color: #59337c; }
-article, form { background: white; border: 1px solid #d1bfe1; padding: 20px; margin: 16px 0; border-radius: 6px; }
-label { display: block; margin: 10px 0; }
-input { display: block; padding: 10px; border: 1px solid #d1bfe1; }
-button { padding: 10px; background: #59337c; color: white; border: 0; cursor: pointer; }
-a { color: #59337c; }
+.pagina {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 6%;
+  min-height: 80vh;
+}
+
+h1, h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  color: #b56b88;
+}
+
+article, form {
+  background: #ffffff;
+  border: 1px solid #f0bfd0;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  color: #4b2635;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  border: 1px solid #f0bfd0;
+  border-radius: 4px;
+  color: #4b2635;
+}
+
+button {
+  padding: 10px;
+  background: #b56b88;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #9e5875;
+}
+
+a {
+  color: #b56b88;
+}

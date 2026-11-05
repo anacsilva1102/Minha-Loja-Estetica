@@ -2,10 +2,10 @@
   max-width: 1100px;
   margin: 35px auto;
   padding: 30px;
-  background-color: #faf8fd;
+  background-color: #fff7fa;
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(181, 107, 136, 0.15);
-  color: #46354f;
+  color: #4b2635;
 }
 
 .cabecalho {
@@ -17,13 +17,13 @@
 }
 
 .cabecalho h2 {
-  color: #7950a3;
+  color: #b56b88;
   margin: 0;
   font-size: 28px;
 }
 
 h3 {
-  color: #7950a3;
+  color: #b56b88;
   margin: 25px 0 18px;
 }
 
@@ -33,7 +33,7 @@ form {
   gap: 10px;
   padding: 22px;
   background-color: #ffffff;
-  border: 1px solid #dac3ef;
+  border: 1px solid #f0bfd0;
   border-radius: 10px;
 }
 
@@ -47,10 +47,10 @@ textarea,
 select {
   width: 100%;
   padding: 11px;
-  border: 1px solid #d5b6e7;
+  border: 1px solid #f0bfd0;
   border-radius: 6px;
   background-color: #ffffff;
-  color: #46354f;
+  color: #4b2635;
   font-size: 14px;
   box-sizing: border-box;
 }
@@ -59,12 +59,12 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: #7950a3;
+  border-color: #b56b88;
   box-shadow: 0 0 4px rgba(181, 107, 136, 0.3);
 }
 
 input[readonly] {
-  background-color: #f7edf1;
+  background-color: #fff0f5;
   cursor: not-allowed;
 }
 
@@ -80,7 +80,7 @@ button {
   padding: 10px 17px;
   border: none;
   border-radius: 6px;
-  background-color: #7950a3;
+  background-color: #b56b88;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
@@ -89,33 +89,33 @@ button {
 }
 
 button:hover {
-  background-color: #704397;
+  background-color: #9e5875;
 }
 
 button.botao-voltar {
   background-color: #ffffff;
-  color: #7950a3;
-  border: 1px solid #7950a3;
+  color: #b56b88;
+  border: 1px solid #b56b88;
 }
 
 button.botao-voltar:hover {
-  background-color: #ede3f7;
+  background-color: #fff0f5;
 }
 
 button.secundario {
-  background-color: #ddc4eb;
-  color: #503963;
+  background-color: #f0bfd0;
+  color: #4b2635;
 }
 
 button.secundario:hover {
-  background-color: #cbaadd;
+  background-color: #e6a9bf;
 }
 
 .consulta {
   margin: 30px 0;
   padding: 22px;
   background-color: #ffffff;
-  border: 1px solid #dac3ef;
+  border: 1px solid #f0bfd0;
   border-radius: 10px;
 }
 
@@ -127,8 +127,8 @@ button.secundario:hover {
 .mensagem {
   padding: 12px;
   border-radius: 6px;
-  background-color: #e5f5e8;
-  color: #276738;
+  background-color: #fce8ef;
+  color: #8d405d;
 }
 
 .erro {
@@ -158,11 +158,11 @@ table {
 th {
   padding: 15px;
   text-align: left;
-  background-color: #ede3f7;
-  color: #75465a;
+  background-color: #fff0f5;
+  color: #b56b88;
   font-size: 14px;
   white-space: nowrap;
-  border-bottom: 2px solid #e0cdec;
+  border-bottom: 2px solid #f0bfd0;
 }
 
 td {
@@ -170,16 +170,16 @@ td {
   text-align: left;
   color: #59434d;
   font-size: 14px;
-  border-bottom: 1px solid #e9ddf4;
+  border-bottom: 1px solid #f0e8eb;
   white-space: nowrap;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #fcfaff;
+  background-color: #fffafd;
 }
 
 tbody tr:hover {
-  background-color: #f7f0fc;
+  background-color: #fff0f5;
 }
 
 tbody tr:last-child td {

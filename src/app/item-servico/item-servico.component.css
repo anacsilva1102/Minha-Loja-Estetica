@@ -2,8 +2,8 @@
   display: block;
   min-height: 100vh;
   font-family: 'Segoe UI', Arial, sans-serif;
-  color: #322739;
-  background: #faf8fd;
+  color: #4b2635;
+  background: #fff7fa;
 }
 
 * {
@@ -17,8 +17,8 @@
   align-items: center;
   gap: 25px;
   padding: 16px 7%;
-  background: #59337c;
-  border-bottom: 4px solid #cbb2df;
+  background: #b56b88;
+  border-bottom: 4px solid #f0bfd0;
 }
 
 .logo h1 {
@@ -33,7 +33,7 @@
   margin: 4px 0 0;
   font-size: 11px;
   letter-spacing: 1.5px;
-  color: #eee7f7;
+  color: #fff0f5;
 }
 
 nav {
@@ -50,20 +50,20 @@ nav a {
 }
 
 nav a:hover {
-  color: #dfc9ef;
+  color: #f0bfd0;
 }
 
 /* CATÁLOGO */
 .catalogo {
   min-height: 65vh;
   padding: 45px 7%;
-  background: #faf8fd;
+  background: #fff7fa;
   text-align: center;
 }
 
 .catalogo h2 {
   margin: 0 0 12px;
-  color: #493455;
+  color: #4b2635;
   font-family: Georgia, serif;
   font-size: 36px;
   font-weight: normal;
@@ -71,7 +71,7 @@ nav a:hover {
 
 .catalogo > p {
   margin: 0 0 28px;
-  color: #665370;
+  color: #997483;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -81,10 +81,10 @@ nav a:hover {
 .catalogo select {
   height: 42px;
   padding: 0 14px;
-  border: 1px solid #cbb2df;
+  border: 1px solid #f0bfd0;
   border-radius: 6px;
   background: #ffffff;
-  color: #493455;
+  color: #4b2635;
   font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 14px;
   outline: none;
@@ -106,8 +106,8 @@ nav a:hover {
 
 .catalogo input:focus,
 .catalogo select:focus {
-  border-color: #71439a;
-  box-shadow: 0 0 0 3px #cbb2df55;
+  border-color: #b56b88;
+  box-shadow: 0 0 0 3px #f0bfd055;
 }
 
 /* PRODUTOS */
@@ -124,8 +124,8 @@ nav a:hover {
   flex-direction: column;
   overflow: hidden;
   padding: 22px;
-  border: 1px solid #dfd2ea;
-  border-top: 3px solid #cbb2df;
+  border: 1px solid #f0bfd0;
+  border-top: 3px solid #b56b88;
   border-radius: 7px;
   background: #ffffff;
   transition: box-shadow 0.3s, transform 0.3s;
@@ -133,12 +133,12 @@ nav a:hover {
 
 .produto:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px #59337c18;
+  box-shadow: 0 6px 18px #b56b8818;
 }
 
 .produto h3 {
   margin: 8px 0 12px;
-  color: #493455;
+  color: #4b2635;
   font-family: Georgia, serif;
   font-size: 19px;
   font-weight: normal;
@@ -146,7 +146,7 @@ nav a:hover {
 
 .produto p {
   margin: 0 0 10px;
-  color: #665370;
+  color: #997483;
   font-size: 13px;
   line-height: 1.6;
 }
@@ -154,7 +154,7 @@ nav a:hover {
 .produto .preco {
   margin-top: auto;
   padding-top: 12px;
-  color: #59337c;
+  color: #b56b88;
   font-size: 18px;
   font-weight: bold;
 }
@@ -165,7 +165,7 @@ nav a:hover {
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
-  background: #59337c;
+  background: #b56b88;
   color: #ffffff;
   font-size: 14px;
   cursor: pointer;
@@ -173,7 +173,7 @@ nav a:hover {
 }
 
 .botao-agendar:hover {
-  background: #71439a;
+  background: #9e5875;
 }
 
 /* MENSAGEM DE ERRO */
@@ -184,7 +184,7 @@ nav a:hover {
 /* RODAPÉ */
 footer {
   padding: 25px 7%;
-  background: #59337c;
+  background: #b56b88;
   color: #ffffff;
   text-align: center;
 }

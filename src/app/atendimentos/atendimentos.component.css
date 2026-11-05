@@ -1,8 +1,68 @@
-.pagina { max-width: 1000px; margin: auto; padding: 40px 6%; }
-h1, h2 { font-family: 'DM Serif Display', Georgia, serif; color: #59337c; }
-form, article { background: white; border: 1px solid #d1bfe1; padding: 22px; margin: 18px 0; }
-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-label { display: flex; flex-direction: column; gap: 5px; }
-input { padding: 10px; border: 1px solid #d1bfe1; }
-button { padding: 10px; background: #59337c; color: white; border: 0; cursor: pointer; }
-@media (max-width: 650px) { form { grid-template-columns: 1fr; } }
+.pagina {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 6%;
+  color: #8F435D;
+  background: #FCE8EF;
+}
+
+.pagina h1,
+.pagina h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  color: #8F435D;
+}
+
+.pagina form,
+.pagina article {
+  background: #FFF9FB;
+  border: 1px solid #F0BFD0;
+  border-radius: 10px;
+  padding: 22px;
+  margin: 18px 0;
+}
+
+.pagina form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.pagina label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #8F435D;
+}
+
+.pagina input {
+  padding: 10px;
+  border: 1px solid #E6A9BF;
+  border-radius: 6px;
+  background: #FFF9FB;
+  color: #754456;
+}
+
+.pagina input:focus {
+  outline: 2px solid #B56B88;
+  outline-offset: 2px;
+}
+
+.pagina button {
+  padding: 10px;
+  border: 1px solid #B56B88;
+  border-radius: 6px;
+  background: #B56B88;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagina button:hover {
+  background: #D77F9B;
+}
+
+@media (max-width: 650px) {
+  .pagina form {
+    grid-template-columns: 1fr;
+  }
+}

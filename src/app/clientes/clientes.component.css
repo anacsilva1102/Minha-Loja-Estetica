@@ -1,109 +1,109 @@
 .pagina-clientes {
     min-height: 100vh;
     padding-bottom: 40px;
-    background: #faf8fd;
-    color: #56415f;
-  }
-  
-  .cabecalho {
+    background: #fff7fa;
+    color: #4b2635;
+}
+
+.cabecalho {
     padding: 28px 7%;
     background: #ffffff;
-    border-bottom: 1px solid #e9ddf4;
-  }
-  
-  .voltar {
-    color: #7950a3;
+    border-bottom: 1px solid #f0e8eb;
+}
+
+.voltar {
+    color: #b56b88;
     text-decoration: none;
     font-weight: 600;
-  }
-  
-  .cabecalho h1 {
+}
+
+.cabecalho h1 {
     margin: 22px 0 8px;
-    color: #7950a3;
-  }
-  
-  .cabecalho p {
+    color: #b56b88;
+}
+
+.cabecalho p {
     margin: 0;
-    color: #74637d;
-  }
-  
-  .conteudo {
+    color: #997483;
+}
+
+.conteudo {
     width: 90%;
     max-width: 1200px;
     margin: 30px auto;
-  }
-  
-  .busca {
+}
+
+.busca {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 22px;
-  }
-  
-  .busca input {
+}
+
+.busca input {
     flex: 1;
     min-width: 200px;
     padding: 12px;
-    border: 1px solid #e4c6d2;
+    border: 1px solid #f0bfd0;
     border-radius: 6px;
     font-size: 14px;
-  }
-  
-  .busca button {
+}
+
+.busca button {
     padding: 12px 18px;
     border: none;
     border-radius: 6px;
-    background: #7950a3;
+    background: #b56b88;
     color: #ffffff;
     cursor: pointer;
-  }
-  
-  .busca .secundario {
-    background: #ead5de;
-    color: #56415f;
-  }
-  
-  .mensagem {
+}
+
+.busca .secundario {
+    background: #f0bfd0;
+    color: #4b2635;
+}
+
+.mensagem {
     margin: 16px 0;
-    color: #9a4e6b;
-  }
-  
-  .tabela-container {
+    color: #b56b88;
+}
+
+.tabela-container {
     overflow-x: auto;
     background: #ffffff;
-    border: 1px solid #e9ddf4;
+    border: 1px solid #f0e8eb;
     border-radius: 8px;
-  }
-  
-  table {
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-  }
-  
-  th, td {
+}
+
+th, td {
     padding: 14px;
-    border-bottom: 1px solid #e9ddf4;
+    border-bottom: 1px solid #f0e8eb;
     white-space: nowrap;
-  }
-  
-  th {
-    background: #f8eaf0;
-    color: #8d4d68;
-  }
-  
-  tbody tr:hover {
-    background: #ffffff;
-  }
-  
-  @media (max-width: 600px) {
+}
+
+th {
+    background: #fff0f5;
+    color: #b56b88;
+}
+
+tbody tr:hover {
+    background: #fff7fa;
+}
+
+@media (max-width: 600px) {
     .busca {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .busca input,
     .busca button {
-      width: 100%;
-      box-sizing: border-box;
+        width: 100%;
+        box-sizing: border-box;
     }
-  }
+}
