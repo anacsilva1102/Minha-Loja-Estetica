@@ -2,7 +2,7 @@
   display: block;
   min-height: 100vh;
   background: #FCE8EF;
-  color: #91465F;
+  color: #8F435D;
   font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif;
 }
 
@@ -10,113 +10,126 @@
   box-sizing: border-box;
 }
 
+/* CABEÇALHO */
 .cabecalho {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-  padding: 18px 7%;
-  background: #C06F8F;
-  border-bottom: 3px solid #F0BFD0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 12px 7%;
+  background: #B96F8D;
+  border-bottom: 2px solid #A85C7B;
 }
 
+/* LOGO E NOME DA LOJA */
 .logo {
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 12px;
-  color: #FFFFFF;
+  color: #71354A !important;
   text-decoration: none;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .logo-marca {
   display: grid;
   place-items: center;
-  width: 43px;
-  height: 43px;
-  border: 1px solid #F0BFD0;
-  border-radius: 50%;
-  background: #FCE8EF;
-  color: #91465F;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 9px;
+  background: #FFF0F5;
+  color: #8F435D;
   font: 25px Georgia, serif;
 }
 
 .logo strong,
 .logo small {
-  display: block;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .logo strong {
-  color: #FFFFFF;
-  font: 22px Georgia, serif;
+  color: #71354A !important;
+  font: bold 26px Georgia, serif;
+  white-space: nowrap;
 }
 
 .logo small {
-  margin-top: 3px;
-  color: #FFF0F5;
-  font-size: 11px;
+  margin-top: 4px;
+  color: #FCE8EF !important;
+  font-size: 12px;
 }
 
+/* MENU */
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 23px;
 }
 
 nav a {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 nav a:hover {
   color: #FCE8EF;
 }
 
+/* PÁGINA */
 .catalogo {
   min-height: calc(100vh - 150px);
-  padding: 55px 6% 70px;
+  padding: 55px 20px 75px;
   background: #FCE8EF;
-  scroll-margin-top: 20px;
 }
 
+/* TÍTULO */
 .catalogo h2 {
-  max-width: 920px;
-  margin: 0 auto 10px;
-  color: #91465F;
-  font: 400 38px Georgia, serif;
-  text-align: left;
+  max-width: 850px;
+  margin: 0 auto 12px;
+  color: #8F435D;
+  font: 400 36px Georgia, serif;
+  text-align: center;
 }
 
 .catalogo > p {
-  max-width: 920px;
-  margin: 0 auto 30px;
+  max-width: 650px;
+  margin: 0 auto 35px;
   color: #A66B81;
   font-size: 14px;
-  text-align: left;
   line-height: 1.7;
+  text-align: center;
 }
 
+/* QUADRO DOS DADOS DAS PESSOAS */
 .formulario-cliente {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px 22px;
+  gap: 24px 28px;
   width: 100%;
-  max-width: 920px;
+  max-width: 780px;
   margin: 0 auto;
-  padding: 35px;
-  background: #FFFFFF;
-  border: 1px solid #F0BFD0;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(145, 70, 95, 0.07);
+  padding: 42px 45px;
+  background: #FFFFFF !important;
+  border: 1px solid #EBC1D0;
+  border-top: 5px solid #B96F8D;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(143, 67, 93, 0.13);
   text-align: left;
 }
 
+/* CAMPOS */
 .campo-cliente {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  min-width: 0;
 }
 
 .campo-cliente:first-child {
@@ -124,92 +137,96 @@ nav a:hover {
 }
 
 .campo-cliente label {
-  color: #91465F;
+  color: #754456;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .campo-cliente input,
 .campo-cliente select {
   width: 100%;
-  min-height: 45px;
-  padding: 11px 13px;
-  border: 1px solid #E6A9BF;
-  border-radius: 6px;
+  min-height: 48px;
+  padding: 12px 15px;
+  border: 1px solid #E6B5C6;
+  border-radius: 8px;
   outline: none;
-  background: #FFFBFC;
+  background: #FFF9FB;
   color: #4B2635;
   font-family: inherit;
   font-size: 14px;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
 .campo-cliente input:focus,
 .campo-cliente select:focus {
-  border-color: #C06F8F;
+  border-color: #8F435D;
   background: #FFFFFF;
-  box-shadow: 0 0 0 3px rgba(192, 111, 143, 0.12);
+  box-shadow: 0 0 0 3px rgba(143, 67, 93, 0.12);
 }
 
 .campo-cliente input::placeholder {
   color: #B995A3;
 }
 
+/* BOTÕES */
 .acoes-cliente {
   grid-column: 1 / -1;
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 10px;
+  gap: 15px;
+  margin-top: 12px;
+  padding-top: 25px;
+  border-top: 1px solid #F0D5DF;
 }
 
 .acoes-cliente .botao {
   flex: 1;
-  min-width: 140px;
-  min-height: 45px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px 18px;
-  border: none;
-  border-radius: 6px;
-  background: #C06F8F;
+  border: 1px solid #8F435D;
+  border-radius: 8px;
+  background: #8F435D;
   color: #FFFFFF;
   text-decoration: none;
-  font-family: inherit;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 .acoes-cliente .botao:hover {
-  background: #91465F;
+  background: #B56B88;
+  border-color: #B56B88;
 }
 
 .acoes-cliente button[type="button"] {
   background: #F0BFD0;
-  color: #91465F;
+  border-color: #F0BFD0;
+  color: #754456;
 }
 
 .acoes-cliente button[type="button"]:hover {
   background: #E6A9BF;
 }
 
+/* MENSAGENS */
 .formulario-cliente > p {
   grid-column: 1 / -1;
   margin: 0;
-  padding: 13px;
+  padding: 14px;
+  border-left: 4px solid #8F435D;
   border-radius: 6px;
   background: #FCE8EF;
-  color: #91465F;
+  color: #8F435D;
   font-size: 14px;
-  text-align: center;
 }
 
+/* RODAPÉ */
 footer {
   padding: 22px 7%;
-  background: #C06F8F;
+  background: #8F435D;
   color: #FFFFFF;
   text-align: center;
 }
@@ -219,21 +236,30 @@ footer p {
   font-size: 13px;
 }
 
+/* TABLETS */
 @media (max-width: 850px) {
   .cabecalho {
-    flex-direction: column;
     gap: 18px;
   }
 
   nav {
-    justify-content: center;
-    gap: 15px;
+    gap: 17px;
+  }
+
+  .formulario-cliente {
+    max-width: 700px;
   }
 }
 
+/* CELULARES */
 @media (max-width: 600px) {
   .cabecalho {
     padding: 18px 5%;
+  }
+
+  .logo strong {
+    font-size: 21px;
+    white-space: normal;
   }
 
   nav {
@@ -245,17 +271,18 @@ footer p {
   }
 
   .catalogo {
-    padding: 35px 5%;
+    padding: 35px 15px;
   }
 
   .catalogo h2 {
-    font-size: 31px;
+    font-size: 30px;
   }
 
   .formulario-cliente {
     grid-template-columns: 1fr;
-    gap: 17px;
-    padding: 23px 18px;
+    gap: 19px;
+    padding: 27px 20px;
+    border-radius: 12px;
   }
 
   .campo-cliente:first-child {
@@ -269,5 +296,9 @@ footer p {
 
   .acoes-cliente .botao {
     width: 100%;
+  }
+
+  .formulario-cliente > p {
+    grid-column: auto;
   }
 }

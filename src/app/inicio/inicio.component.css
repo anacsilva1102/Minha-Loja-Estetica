@@ -1,45 +1,48 @@
+
 :host {
   display: block;
   min-height: 100vh;
   background: #FCE8EF;
-  color: #91465F;
-  font-family: 'DM Sans', sans-serif;
-  box-sizing: border-box;
+  color: #8F435D;
+  font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
+/* CABEÇALHO */
 .cabecalho {
-  min-height: 85px;
+  min-height: 90px;
   padding: 18px 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  background: #C06F8F;
-  border-bottom: 3px solid #F0BFD0;
+  gap: 25px;
+  background: #FFF9FB;
+  border-bottom: 1px solid #F0BFD0;
+  box-shadow: 0 4px 18px rgba(143, 67, 93, 0.06);
 }
 
+/* LOGO */
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  color: #FFFFFF;
+  gap: 13px;
+  color: #8F435D;
   text-decoration: none;
 }
 
 .logo-marca {
   display: grid;
   place-items: center;
-  width: 43px;
-  height: 43px;
-  border: 1px solid #F0BFD0;
-  border-radius: 50%;
-  background: #FCE8EF;
-  color: #91465F;
-  font: 25px 'DM Serif Display', Georgia, serif;
+  width: 49px;
+  height: 49px;
+  border-radius: 14px;
+  background: #8F435D;
+  color: #FFFFFF;
+  font: 26px Georgia, serif;
+  box-shadow: 0 5px 12px rgba(143, 67, 93, 0.18);
 }
 
 .logo strong,
@@ -48,135 +51,180 @@
 }
 
 .logo strong {
-  color: #FFFFFF;
-  font: 22px 'DM Serif Display', Georgia, serif;
+  color: #8F435D;
+  font: 25px Georgia, serif;
 }
 
 .logo small {
-  margin-top: 3px;
-  color: #FFF0F5;
-  font-size: 11px;
+  margin-top: 4px;
+  color: #B56B88;
+  font-size: 10px;
+  letter-spacing: 2px;
 }
 
+/* MENU */
 nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 22px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 nav a {
-  color: #FFFFFF;
+  padding: 11px 15px;
+  border-radius: 7px;
+  color: #754456;
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 nav a:hover {
-  color: #FCE8EF;
+  background: #FCE8EF;
+  color: #8F435D;
 }
 
+/* DESTAQUE PRINCIPAL */
 .destaque {
-  min-height: 430px;
-  padding: 65px 7%;
+  position: relative;
+  min-height: 490px;
+  padding: 75px 7%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FCE8EF;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 90% 15%, #F0BFD0 0, transparent 30%),
+    radial-gradient(circle at 5% 90%, #F0BFD0 0, transparent 28%),
+    #FCE8EF;
   text-align: center;
 }
 
 .destaque-texto {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  max-width: 800px;
+  max-width: 850px;
 }
 
 .introducao {
-  margin-bottom: 18px;
-  color: #C06F8F;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  display: inline-block;
+  margin: 0 0 22px;
+  padding: 9px 18px;
+  border: 1px solid #E6A9BF;
+  border-radius: 30px;
+  background: #FFF9FB;
+  color: #8F435D;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .destaque-texto h1 {
-  max-width: 750px;
-  margin: 0 auto 20px;
-  color: #91465F;
-  font: 400 48px/1.2 'DM Serif Display', Georgia, serif;
+  max-width: 800px;
+  margin: 0 auto 22px;
+  color: #754456;
+  font: 400 54px/1.15 Georgia, serif;
+}
+
+.destaque-texto h1 span {
+  color: #B56B88;
 }
 
 .destaque-texto > p:not(.introducao) {
-  max-width: 600px;
+  max-width: 610px;
   margin: 0 auto;
-  color: #A66B81;
+  color: #997483;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
+/* BOTÕES PRINCIPAIS */
 .acoes {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 30px;
+  gap: 18px;
+  margin-top: 35px;
 }
 
 .botao {
-  display: inline-block;
-  padding: 14px 28px;
-  border-radius: 6px;
-  background: #C06F8F;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 14px 30px;
+  border: 1px solid #8F435D;
+  border-radius: 8px;
+  background: #8F435D;
   color: #FFFFFF;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(143, 67, 93, 0.15);
 }
 
 .botao:hover {
-  background: #91465F;
+  transform: translateY(-3px);
+  background: #B56B88;
+  border-color: #B56B88;
 }
 
 .link-servicos {
-  color: #C06F8F;
+  padding: 13px 8px;
+  color: #8F435D;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 600;
-  border-bottom: 1px solid #C06F8F;
-  padding-bottom: 4px;
+  font-weight: 700;
+  border-bottom: 2px solid #B56B88;
   transition: 0.3s;
 }
 
 .link-servicos:hover {
-  color: #91465F;
+  color: #B56B88;
 }
 
+/* CARTÕES DE ACESSO */
 .caminhos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
   max-width: 1150px;
-  margin: 20px auto 50px;
-  padding: 35px 20px;
-  background: #FFF9FB;
-  border-radius: 10px;
+  margin: -10px auto 65px;
+  padding: 0 20px;
 }
 
 .caminhos a {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 25px 30px;
+  gap: 13px;
+  min-height: 190px;
+  padding: 30px 26px;
+  border: 1px solid #F0BFD0;
+  border-radius: 12px;
+  background: #FFF9FB;
   text-decoration: none;
-  border-right: 1px solid #F0BFD0;
+  box-shadow: 0 7px 22px rgba(143, 67, 93, 0.06);
   transition: 0.3s;
 }
 
-.caminhos a:last-child {
-  border-right: none;
+.caminhos a:hover {
+  transform: translateY(-6px);
+  border-color: #B56B88;
+  box-shadow: 0 12px 28px rgba(143, 67, 93, 0.12);
+}
+
+.caminhos a::before {
+  content: "";
+  width: 38px;
+  height: 4px;
+  border-radius: 5px;
+  background: #B56B88;
 }
 
 .caminhos a::after {
@@ -184,106 +232,129 @@ nav a:hover {
   position: absolute;
   right: 25px;
   bottom: 25px;
-  color: #C06F8F;
-  font-size: 22px;
+  color: #B56B88;
+  font-size: 23px;
   transition: 0.3s;
-}
-
-.caminhos a:hover {
-  background: #FCE8EF;
 }
 
 .caminhos a:hover::after {
   right: 18px;
+  color: #8F435D;
 }
 
 .caminhos strong {
-  color: #91465F;
-  font-family: Georgia, serif;
-  font-size: 25px;
-  font-weight: normal;
+  color: #8F435D;
+  font: 400 24px Georgia, serif;
 }
 
 .caminhos span {
-  max-width: 220px;
-  color: #A66B81;
-  font-size: 14px;
-  line-height: 1.6;
+  max-width: 230px;
+  color: #997483;
+  font-size: 13px;
+  line-height: 1.7;
 }
 
+/* RODAPÉ */
 footer {
-  padding: 22px 7%;
-  background: #C06F8F;
+  padding: 27px 7%;
+  background: #8F435D;
   color: #FFFFFF;
-  font-size: 14px;
   text-align: center;
 }
 
 footer p {
   margin: 0;
+  font-size: 13px;
 }
 
 footer span {
-  margin-left: 8px;
-  color: #FFF0F5;
+  display: inline-block;
+  margin-top: 7px;
+  color: #F0BFD0;
   font-size: 12px;
 }
 
+/* TABLETS */
 @media (max-width: 850px) {
   .cabecalho {
-    align-items: flex-start;
     flex-direction: column;
+    padding: 22px 5%;
   }
 
   nav {
-    gap: 15px 20px;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .destaque {
+    min-height: 420px;
+  }
+
+  .destaque-texto h1 {
+    font-size: 44px;
   }
 
   .caminhos {
-    margin: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 20px auto 45px;
   }
 }
 
+/* CELULARES */
 @media (max-width: 600px) {
   .cabecalho {
-    padding: 18px 6%;
+    padding: 18px 5%;
+  }
+
+  .logo strong {
+    font-size: 22px;
   }
 
   nav {
-    gap: 14px;
+    width: 100%;
+    gap: 5px;
+  }
+
+  nav a {
+    padding: 9px 10px;
+    font-size: 12px;
   }
 
   .destaque {
     min-height: auto;
-    padding: 60px 6%;
+    padding: 65px 6%;
   }
 
   .destaque-texto h1 {
     font-size: 36px;
   }
 
+  .destaque-texto > p:not(.introducao) {
+    font-size: 14px;
+  }
+
   .acoes {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+  }
+
+  .botao {
+    width: 100%;
   }
 
   .caminhos {
     grid-template-columns: 1fr;
+    gap: 14px;
     margin: 15px;
-    padding: 15px;
+    padding: 0;
   }
 
   .caminhos a {
-    padding: 25px 20px;
-    border-right: none;
-    border-bottom: 1px solid #F0BFD0;
-  }
-
-  .caminhos a:last-child {
-    border-bottom: none;
+    min-height: 155px;
+    padding: 25px;
   }
 
   footer {
-    padding: 20px 6%;
+    padding: 22px 5%;
   }
 }
