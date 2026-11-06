@@ -92,7 +92,9 @@ export class FuncionariosComponent implements OnInit {
         this.cancelarEdicao();
         this.listar();
       },
-      error: () => this.mensagem = 'Não foi possível salvar o funcionário.'
+      error: erro => this.mensagem = typeof erro.error === 'string'
+        ? erro.error
+        : 'Não foi possível salvar o funcionário.'
     });
   }
 

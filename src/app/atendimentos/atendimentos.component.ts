@@ -72,7 +72,9 @@ export class AtendimentosComponent implements OnInit {
         this.mensagem = 'Atendimento registrado.';
         this.listar();
       },
-      error: () => this.mensagem = 'Não foi possível registrar o atendimento.'
+      error: erro => this.mensagem = typeof erro.error === 'string'
+        ? erro.error
+        : 'Não foi possível registrar o atendimento.'
     });
   }
 }
